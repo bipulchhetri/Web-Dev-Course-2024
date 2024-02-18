@@ -1,0 +1,49 @@
+
+/* Universal selector */
+*{
+    margin:0;
+    paadding:0;
+
+}
+
+/* Class Selector */
+.cls{
+    background-color: yellow;
+}
+#unique{
+    background-color:red;
+}
+/* Child Selector */
+div>p{
+    color:darkblue;
+    font-size: 20px;
+}
+
+/* Descendant Selector  */
+
+div p{
+    color:rgb(40, 20, 221);
+    font-size:25px
+}
+
+/* Pseudo Selector  */
+a:visited{
+    color: rgb(131, 14, 14)
+}
+
+a:link {
+    color: rgb(10, 233, 233);
+}
+
+a:active{
+    background-color: rgb(221, 29, 29);
+}
+
+a:hover{
+    background-color: rgb(207, 207, 37);
+}
+
+
+p:last-child{
+    background-color: aqua;
+}
