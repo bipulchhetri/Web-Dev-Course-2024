@@ -5,16 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Grid</title>
     <style>
-        .box{
-            display: grid;
-            grid-template-columns: 120px 80px;
-        }
+      .gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+.gallery__item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__item > img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery__item--hor {
+  grid-column: span 2;
+}
+
+.gallery__item--vert {
+  grid-row: span 2;
+}
+
+.gallery__item--lg {
+  grid-column: span 2;
+  grid-row: span 2;
+}
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="container">
+        <div class="gallery">
+          <div class="gallery__item gallery__item--hor">
+            <img src="https://img.freepik.com/free-photo/person-playing-3d-video-games-device_23-2151005751.jpg?size=626&ext=jpg&ga=GA1.1.41362503.1705339184&semt=sph alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg?size=626&ext=jpg&ga=GA1.1.41362503.1705339184&semt=sph" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149365021.jpg?size=626&ext=jpg&ga=GA1.1.41362503.1705339184&semt=sph" alt="">
+          </div>
+          <div class="gallery__item gallery__item--vert">
+            <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1708449792~exp=1708450392~hmac=58988e0a2c574d64ccf200f273dc42a114a8fbef66b8bc5a03dca40debb6483f" alt="">
+          </div>
+          <div class="gallery__item gallery__item--lg">
+            <img src="https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?w=740&t=st=1708449863~exp=1708450463~hmac=b911f257037bd6d008d6dcdce9bc2d6e064222e336cfbd745b201bb4fe14bf63" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="https://img.freepik.com/free-photo/top-view-unrecognizable-hacker-performing-cyberattack-night_1098-18706.jpg?w=360&t=st=1708449840~exp=1708450440~hmac=ff7abfc2b289e3a5cf12bf6701850f91598c78f0cd9ff3d0feca4506e17cdf96" alt="">
+          </div>
+          <div class="gallery__item gallery__item--hor">
+            <img src="https://img.freepik.com/free-photo/person-playing-3d-video-games-device_23-2151005751.jpg?size=626&ext=jpg&ga=GA1.1.41362503.1705339184&semt=sph alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg?size=626&ext=jpg&ga=GA1.1.41362503.1705339184&semt=sph" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149365021.jpg?size=626&ext=jpg&ga=GA1.1.41362503.1705339184&semt=sph" alt="">
+          </div>
+        </div>
+      </div>
 
 </body>
 </html>
