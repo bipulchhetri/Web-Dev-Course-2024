@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Grid</title>
+    <title>Day 3</title>
     <style>
       .gallery {
   display: grid;
@@ -40,10 +40,33 @@
   grid-column: span 2;
   grid-row: span 2;
 }
+.container{
+  background-color: rgb(9, 106, blue);
+  height: 80vh;
+  width: 80vw;
+  outline: 2px solid red;
+}
+.box{
+  width: 34px;
+  height: 30vh;
+  width: 30vw;
+  background-color: aqua;
+  animation: anima 3s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in;
+}
+@keyframes anima {
+  from{
+    transform: translateX(10px);
+  }
+  to{
+    transform: translateX(100px);
+  }
+}
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="gallery">
           <div class="gallery__item gallery__item--hor">
             <img src="https://img.freepik.com/free-photo/person-playing-3d-video-games-device_23-2151005751.jpg?size=626&ext=jpg&ga=GA1.1.41362503.1705339184&semt=sph alt="">
@@ -73,7 +96,11 @@
             <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149365021.jpg?size=626&ext=jpg&ga=GA1.1.41362503.1705339184&semt=sph" alt="">
           </div>
         </div>
-      </div>
-
+      </div> -->
+<div class="container">
+  <div class="box">
+    BOX
+  </div>
+</div>
 </body>
 </html>
